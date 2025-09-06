@@ -1,0 +1,101 @@
+<!-- 
+Create a responsive dark-themed personal portfolio webpage 
+with:
+- A header that says "My Portfolio"
+- A short intro section with my name and a welcome message
+- A projects section with 3 sample project cards
+- A footer with "Contact me" 
+Use HTML and CSS (inline or in <style>) 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style> 
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        header {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .intro {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .intro h2 {
+            margin-bottom: 10px;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .project-card {
+            background-color: #1f1f1f;
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .project-card h3 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #1f1f1f;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 600px) {
+            .projects {
+                flex-direction: column;
+                align-items: center;
+            }
+            .project-card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+    <section class="intro">
+        <h2>Hello, I'm Abhi!</h2>
+        <p>Welcome to my personal portfolio webpage!</p>
+    </section>
+    <section class="projects">
+        <div class="project-card">
+            <h3>Agentic code</h3>
+            <p>A brief description of Project 1.</p>
+        </div>
+        <div class="project-card">
+            <h3>Project 2</h3>
+            <p>A brief description of Project 2.</p>
+        </div>
+        <div class="project-card">
+            <h3>Project 3</h3>
+            <p>A brief description of Project 3.</p>
+        </div>
+    </section>
+    <footer>
+        <p>Contact me</p>
+    </footer>
+</body>
+</html>
